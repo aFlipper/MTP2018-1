@@ -25,56 +25,12 @@ void main()
     }
     for(lix=0, met=0; lix<quant; lix++)
     {
-                if(antst[lix]==48)
-                {
-                    met++;
-                }
-                if(antst[lix]==49)
-                {
-                    num = num +(1*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==50)
-                {
-                    num = num +(2*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==51)
-                {
-                    num = num +(3*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==52)
-                {
-                    num = num +(4*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==53)
-                {
-                    num = num +(5*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==54)
-                {
-                    num = num +(6*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==55)
-                {
-                    num = num +(7*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==56)
-                {
-                    num = num +(8*pot(10,met));
-                    met++;
-                }
-                if(antst[lix]==57)
-                {
-                    num = num +(9*pot(10,met));
-                    met++;
-                }
+        if(antst[lix]>47 && antst[lix]<58)
+        {
+            num = num +((antst[lix]-48)*pot(10,met));
+            met++;
         }
+    }
 
     printf("%d", num);
 }
