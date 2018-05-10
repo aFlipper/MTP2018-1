@@ -13,24 +13,19 @@ int pot (int base,int exp)
 void main()
 {
     int quant=0, num=0, lix, met;
-    char st[256], antst[256];
+    char st[256];
     scanf("%s", st);
     while(st[quant])
     {
         quant++;
     }
-    for(lix=quant-1, met=0; lix>0, met<quant;lix--, met++)
+    for(lix=quant-1, met=0; lix>=0;lix--)
     {
-        antst[met] = st[lix];
-    }
-    for(lix=0, met=0; lix<quant; lix++)
-    {
-        if(antst[lix]>47 && antst[lix]<58)
+        if(st[lix]>47 && st[lix]<58)
         {
-            num = num +((antst[lix]-48)*pot(10,met));
+            num = num + ((st[lix]-48)*pot(10,met));
             met++;
         }
     }
-
-    printf("%d", num);
+       printf("%d", num);
 }
