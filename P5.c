@@ -8,7 +8,7 @@ void main ()
     char vchar [255];
     int* pint = (int *) vchar;
     char* pchar = (char *) &vint;
-    printf("1- Codificar\n2- Decodificar\n");
+    printf("1. Codificar\n2. Decodificar\n");
     scanf("%d", &men);
     a =getchar();
     switch(men)
@@ -18,7 +18,6 @@ void main ()
         {
             vchar[a]=0;
         }
-        printf("Insira uma frase\n");
         fgets(vchar,255,stdin);
         for(a=0;vchar[a]!=0;a++)
         {
@@ -30,7 +29,6 @@ void main ()
         }
         break;
     case 2:
-        printf("Insira um numero\n");
         for(a=0;a<64;a++)
         {
             scanf("%d", &vint[a]);
@@ -46,3 +44,4 @@ void main ()
         break;
     }
 }
+
