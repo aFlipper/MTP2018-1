@@ -8,7 +8,7 @@ void main ()
     char vchar [255];
     int* pint = (int *) vchar;
     char* pchar = (char *) &vint;
-    printf("1- Codificar\n2- Descodificar\n");
+    printf("1- Codificar\n2- Decodificar\n");
     scanf("%d", &men);
     a =getchar();
     switch(men)
