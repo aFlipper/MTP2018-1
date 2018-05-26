@@ -13,7 +13,7 @@ int ack(int m, int n)
 }
 void main ()
 {
-    int m ,n;
-    scanf("%d %d", &m, &n);
-    printf("%d", ack(m,n));
+    int a ,b;
+    scanf("%d %d", &a, &b);
+    printf("%d", ack(a,b));
 }
