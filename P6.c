@@ -1,3 +1,4 @@
+//Tales Oliveira Neves, 11721ECP010
 #include <stdio.h>
 int soma (int vet[])
 {
