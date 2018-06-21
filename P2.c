@@ -14,17 +14,20 @@ int pow(int gok, int exp)
     }
     return gok;
 }
-int btod(int a)
+int btod()
 {
-  int b, i, c;
-    scanf("%d", &a);
+    char a[256];
+    scanf("%s", a);
+    int b, c;
     c=0;
-        for(b=1,i=0; a*10>b; b*10,i++)
+        for(b=0;a[b]!='\0';b++)
         {
-            c =c+((a%10)*(pow(2,i)));
-            a = a/10;
+            c=c<<1;
+            if(a[b]=='1')
+            {
+             c++;
+            }
         }
-    printf("%d", c);
 	return c;
 }
 int dtob(int a)
@@ -52,12 +55,10 @@ void main()
     scanf("%d", &men);
     switch(men)
     {
-        case 1: scanf("%d",&a);
-                b= btod(a);
+        case 1: b=btod(a);
                 printf("%d",b);
                 break;
-        case 2: scanf("%d",&a);
-                b= btod(a);
+        case 2: b= btod(a);
                 printf("%x",b);
                 break;
         case 3: scanf("%x",&a);
