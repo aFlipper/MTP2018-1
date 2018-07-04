@@ -24,7 +24,6 @@ void main ()
     switch(a)
     {
     case 1:
-        printf("qual produto?\n");
         scanf("%d",&b);
         l=getchar();
         scanf("%s",&(prod[b-1].nome));
@@ -37,7 +36,6 @@ void main ()
         goto primenu;
         break;
     case 2:
-        printf("qual produto?\n");
         scanf("%d",&b);
         if(prod[b-1].st==0){printf("Produto nao cadastrado!\n");}
         else
