@@ -3,17 +3,18 @@
 main()
 {
     int a, b;
-    char pinto[10];
+    char yt[256];
     a= 0, b = 0;
-    scanf("%s", &pinto);
+    scanf("%s", yt);
     while(b<10)
     {
-        if(pinto[b] == '1' && a==0){a = a +1;}
-        else if(pinto[b] == '1' && a==1){a = a -1;}
-        else if(pinto[b] == '0' && a==1){a = a +1;}
-        else if(pinto[b] == '0' && a==2){a = a -1;}
+        if(yt[b] == '1' && a==0){a = a +1;}
+        else if(yt[b] == '1' && a==1){a = a -1;}
+        else if(yt[b] == '0' && a==1){a = a +1;}
+        else if(yt[b] == '0' && a==2){a = a -1;}
         b++;
     }
-    if(a==0){printf("%s e multiplo de 3\n", pinto);}
-    else{printf("nao e\n");}
+    if(a==0){printf("e multiplo de 3\n");}
+    else{printf(" nao e\n");}
 }
+
