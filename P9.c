@@ -27,7 +27,7 @@ void main ()
     case 1:
         scanf("%d",&b);
         l=getchar();
-        scanf("%s",&(prod[b-1].nome));
+        scanf("%s",(prod[b-1].nome));
         scanf("%f",&(prod[b-1].preco));
         scanf("%f",&(prod[b-1].dimensoes.largura));
         scanf("%f",&(prod[b-1].dimensoes.profundidade));
