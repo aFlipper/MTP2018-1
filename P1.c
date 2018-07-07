@@ -1,6 +1,6 @@
 //Tales Oliveira Neves, 11721ECP010
 #include <stdio.h>
-main()
+void main()
 {
     int a, b;
     char yt[256];
