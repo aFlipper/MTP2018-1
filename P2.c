@@ -1,19 +1,5 @@
 //Tales Oliveira Neves, 11721ECP010
 #include <stdio.h>
-int pow(int gok, int exp)
-{
-    int er;
-    er= gok;
-    for(exp=exp;exp>1;exp--)
-    {
-        gok=gok*er;
-    }
-    if(exp==0)
-    {
-        gok=1;
-    }
-    return gok;
-}
 int btod()
 {
     char a[256];
@@ -80,5 +66,4 @@ void main()
                 printf("%o", a);
                 break;
     }
-    return 0;
 }
