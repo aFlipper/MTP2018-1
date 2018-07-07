@@ -7,11 +7,12 @@ int soma (int vet[])
     {
         b = b + vet[a];
     }
+    printf("%d\n",b);
     return b;
 }
 float med (int quant, int d)
 {
-    float m = d/quant;
+    float m = (float)d/(float)quant;
     return m;
 }
 void main()
