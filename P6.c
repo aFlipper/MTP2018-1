@@ -7,7 +7,6 @@ int soma (int vet[])
     {
         b = b + vet[a];
     }
-    printf("%d\n",b);
     return b;
 }
 float med (int quant, int d)
